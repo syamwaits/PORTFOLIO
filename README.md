@@ -1,16 +1,75 @@
-# React + Vite
+# Syam Kumar - Professional Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive portfolio website showcasing my expertise as a Senior IT Support Engineer with 10+ years of experience in enterprise IT environments.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Modern Design**: Built with React 19 and Material-UI v7
+- **Dark Theme**: Professional dark mode interface
+- **Responsive Layout**: Optimized for all devices and screen sizes
+- **Interactive Components**: Smooth animations and hover effects
+- **Professional Sections**:
+  - Hero section with profile introduction
+  - About section with statistics and personal info
+  - Skills showcase with progress indicators
+  - Experience timeline
+  - Contact form with multiple contact methods
 
-## React Compiler
+## 🛠 Technologies Used
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+- **Frontend**: React 19, Material-UI v7.3.5
+- **Build Tool**: Vite
+- **Styling**: Material-UI Theme System
+- **Icons**: Material-UI Icons
+- **Responsive Design**: Material-UI Grid System
 
-## Expanding the ESLint configuration
+## 📱 Sections
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Hero Section
+- Professional introduction
+- Key highlights and skills
+- Location and contact actions
+
+### About Section
+- Professional statistics
+- Core expertise cards
+- Contact information
+
+### Skills Section
+- 5 main skill categories:
+  - Operating Systems
+  - Tools & Software
+  - Hardware
+  - Networking
+  - Management Skills
+- Progress indicators for each skill
+
+### Experience Section
+- Professional timeline
+- Key achievements and responsibilities
+
+### Contact Section
+- Multiple contact methods
+- Interactive contact form
+- Professional contact information
+
+## 🎯 Professional Focus
+
+**Senior IT Support Engineer** specializing in:
+- Enterprise IT Infrastructure
+- ERP Systems (Beams, Canias)
+- Network Security & Administration
+- System Maintenance & Troubleshooting
+- Team Leadership & Project Management
+
+## 📍 Location
+Dubai, UAE
+
+## 🔗 Connect With Me
+- **Email**: Available on request
+- **LinkedIn**: Professional profile available
+- **Phone**: Contact for details
+
+---
+
+**Built with ❤️ using React and Material-UI**
