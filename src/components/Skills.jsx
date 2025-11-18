@@ -249,7 +249,7 @@ export default function Skills() {
           </Typography>
           <Grid container spacing={4}>
             <Grid item xs={12} sm={6} md={3}>
-              <Box>
+              <Box sx={{ textAlign: 'center' }}>
                 <Typography variant="h2" sx={{ fontWeight: 800, color: '#2563eb', mb: 1 }}>
                   20+
                 </Typography>
@@ -259,7 +259,7 @@ export default function Skills() {
               </Box>
             </Grid>
             <Grid item xs={12} sm={6} md={3}>
-              <Box>
+              <Box sx={{ textAlign: 'center' }}>
                 <Typography variant="h2" sx={{ fontWeight: 800, color: '#059669', mb: 1 }}>
                   10+
                 </Typography>
@@ -269,7 +269,7 @@ export default function Skills() {
               </Box>
             </Grid>
             <Grid item xs={12} sm={6} md={3}>
-              <Box>
+              <Box sx={{ textAlign: 'center' }}>
                 <Typography variant="h2" sx={{ fontWeight: 800, color: '#dc2626', mb: 1 }}>
                   90%
                 </Typography>
@@ -279,7 +279,7 @@ export default function Skills() {
               </Box>
             </Grid>
             <Grid item xs={12} sm={6} md={3}>
-              <Box>
+              <Box sx={{ textAlign: 'center' }}>
                 <Typography variant="h2" sx={{ fontWeight: 800, color: '#7c3aed', mb: 1 }}>
                   21
                 </Typography>
