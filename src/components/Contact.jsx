@@ -46,72 +46,87 @@ export default function Contact() {
         </Typography>
       </Box>
       
-      <Grid container spacing={{ xs: 3, md: 4 }}>
-        <Grid item xs={12} md={6}>
-          <Box sx={{ mb: { xs: 3, md: 4 } }}>
-            <Typography 
-              variant="h4" 
-              fontWeight={700} 
-              color="#fff" 
-              gutterBottom
-              sx={{ fontSize: { xs: '1.5rem', sm: '1.75rem', md: '2.125rem' } }}
-            >
-              Contact Information
-            </Typography>
-            <Typography 
-              variant="body1" 
-              color="rgba(255, 255, 255, 0.8)" 
-              sx={{ mb: { xs: 3, md: 4 }, fontSize: { xs: '0.95rem', md: '1rem' } }}
-            >
-              Let's connect and discuss how we can work together on your next project.
-            </Typography>
-          </Box>
+      {/* Contact Information Section */}
+      <Box sx={{ mb: { xs: 6, md: 8 }, textAlign: 'center' }}>
+        <Typography 
+          variant="h4" 
+          fontWeight={700} 
+          color="#fff" 
+          gutterBottom
+          sx={{ 
+            fontSize: { xs: '1.75rem', sm: '2rem', md: '2.5rem' },
+            mb: { xs: 2, md: 3 }
+          }}
+        >
+          Contact Information
+        </Typography>
+        <Typography 
+          variant="body1" 
+          color="rgba(255, 255, 255, 0.8)" 
+          sx={{ 
+            fontSize: { xs: '1rem', md: '1.1rem' },
+            maxWidth: 700,
+            mx: 'auto',
+            mb: { xs: 4, md: 6 }
+          }}
+        >
+          Let's connect and discuss how we can work together on your next project.
+        </Typography>
           
-          <Grid container spacing={{ xs: 2, sm: 3 }}>
-            {contactMethods.map((method, index) => (
-              <Grid item xs={6} sm={6} md={12} lg={6} key={index}>
-                <Card 
-                  component={method.link ? "a" : "div"}
-                  href={method.link || undefined}
-                  target={method.link ? "_blank" : undefined}
-                  rel={method.link ? "noopener noreferrer" : undefined}
-                  sx={{
-                    background: 'rgba(255, 255, 255, 0.1)',
-                    backdropFilter: 'blur(20px)',
-                    border: '1px solid rgba(255, 255, 255, 0.2)',
-                    borderRadius: 3,
-                    transition: 'all 0.3s ease',
-                    cursor: method.link ? 'pointer' : 'default',
-                    textDecoration: 'none',
-                    '&:hover': method.link ? {
-                      transform: 'translateY(-5px) scale(1.02)',
-                      boxShadow: '0 15px 30px rgba(0, 0, 0, 0.3)'
-                    } : {}
-                  }}
+        <Grid container spacing={{ xs: 3, sm: 4 }} sx={{ justifyContent: 'center', mb: { xs: 6, md: 8 } }}>
+          {contactMethods.map((method, index) => (
+            <Grid item xs={12} sm={6} md={3} key={index}>
+              <Card 
+                component={method.link ? "a" : "div"}
+                href={method.link || undefined}
+                target={method.link ? "_blank" : undefined}
+                rel={method.link ? "noopener noreferrer" : undefined}
+                sx={{
+                  background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05))',
+                  backdropFilter: 'blur(20px)',
+                  border: '2px solid rgba(255, 255, 255, 0.15)',
+                  borderRadius: 4,
+                  transition: 'all 0.4s ease',
+                  cursor: method.link ? 'pointer' : 'default',
+                  textDecoration: 'none',
+                  minHeight: { xs: '180px', sm: '200px' },
+                  display: 'flex',
+                  '&:hover': method.link ? {
+                    transform: 'translateY(-8px)',
+                    boxShadow: '0 20px 40px rgba(0, 0, 0, 0.4)',
+                    borderColor: 'rgba(103, 126, 234, 0.5)',
+                    background: 'linear-gradient(135deg, rgba(103, 126, 234, 0.1), rgba(118, 75, 162, 0.05))'
+                  } : {}
+                }}
                 >
-                  <CardContent sx={{ 
-                    p: { xs: 2, sm: 3 }, 
-                    textAlign: 'center',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    minHeight: { xs: '140px', sm: '160px' }
-                  }}>
-                    <Box 
-                      sx={{ 
-                        mb: { xs: 1, sm: 1.5 },
-                        p: { xs: 1.5, sm: 2 },
-                        borderRadius: '50%',
-                        background: 'linear-gradient(135deg, #667eea, #764ba2)',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        width: { xs: 48, sm: 56 },
-                        height: { xs: 48, sm: 56 },
-                        '& svg': { color: '#fff', fontSize: { xs: 20, sm: 24 } }
-                      }}
-                    >
+                <CardContent sx={{ 
+                  p: { xs: 3, sm: 4 }, 
+                  textAlign: 'center',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  height: '100%',
+                  position: 'relative'
+                }}>
+                  <Box 
+                    sx={{ 
+                      mb: { xs: 2, sm: 2.5 },
+                      p: { xs: 2, sm: 2.5 },
+                      borderRadius: '50%',
+                      background: index === 0 ? 'linear-gradient(135deg, #667eea, #764ba2)' :
+                                 index === 1 ? 'linear-gradient(135deg, #f093fb, #f5576c)' :
+                                 index === 2 ? 'linear-gradient(135deg, #4facfe, #00f2fe)' :
+                                 'linear-gradient(135deg, #43e97b, #38f9d7)',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      width: { xs: 64, sm: 72 },
+                      height: { xs: 64, sm: 72 },
+                      boxShadow: '0 8px 25px rgba(0, 0, 0, 0.2)',
+                      '& svg': { color: '#fff', fontSize: { xs: 24, sm: 28 } }
+                    }}
+                  >
                       {method.icon}
                     </Box>
                     <Typography 
@@ -143,21 +158,24 @@ export default function Contact() {
                     </Typography>
                   </CardContent>
                 </Card>
-              </Grid>
-            ))}
-          </Grid>
+            </Grid>
+          ))}
         </Grid>
+      </Box>
+
+      {/* Contact Form Section */}
+      <Grid container spacing={{ xs: 3, md: 4 }} sx={{ justifyContent: 'center' }}>
         
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={8} lg={6}>
           <Card 
-            sx={{
-              background: 'rgba(255, 255, 255, 0.1)',
-              backdropFilter: 'blur(20px)',
-              border: '1px solid rgba(255, 255, 255, 0.2)',
-              borderRadius: 4,
-              mt: { xs: 2, md: 0 }
-            }}
-          >
+          sx={{
+            background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05))',
+            backdropFilter: 'blur(30px)',
+            border: '2px solid rgba(255, 255, 255, 0.2)',
+            borderRadius: 4,
+            boxShadow: '0 20px 40px rgba(0, 0, 0, 0.3)'
+          }}
+        >
             <CardContent sx={{ p: { xs: 3, md: 4 } }}>
               <Typography 
                 variant="h5" 

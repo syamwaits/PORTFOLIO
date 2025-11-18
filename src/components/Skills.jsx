@@ -65,6 +65,7 @@ const skillLevels = {
 export default function Skills() {
   return (
     <Box 
+      id="skills"
       sx={{ 
         bgcolor: 'background.paper', 
         py: 10,
