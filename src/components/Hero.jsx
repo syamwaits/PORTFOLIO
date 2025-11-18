@@ -161,6 +161,14 @@ export default function Hero() {
                   variant="outlined" 
                   size="large"
                   startIcon={<Email />}
+                  component="a"
+                  href="#contact"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.getElementById('contact').scrollIntoView({ 
+                      behavior: 'smooth' 
+                    });
+                  }}
                   sx={{ 
                     borderColor: 'rgba(255,255,255,0.8)',
                     color: '#fff',
@@ -171,6 +179,7 @@ export default function Hero() {
                     borderRadius: 4,
                     borderWidth: 2,
                     backdropFilter: 'blur(10px)',
+                    textDecoration: 'none',
                     '&:hover': { 
                       borderColor: '#fff',
                       bgcolor: 'rgba(255,255,255,0.1)',
