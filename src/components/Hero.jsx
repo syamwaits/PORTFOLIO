@@ -134,6 +134,9 @@ export default function Hero() {
                   variant="contained" 
                   size="large"
                   startIcon={<Download />}
+                  component="a"
+                  href="/Syamkumar_Professional_Resume.pdf"
+                  download="Syamkumar_Professional_Resume.pdf"
                   sx={{ 
                     bgcolor: '#fff',
                     color: '#667eea',
@@ -143,6 +146,7 @@ export default function Hero() {
                     py: 2,
                     borderRadius: 4,
                     boxShadow: '0 8px 32px rgba(0,0,0,0.3)',
+                    textDecoration: 'none',
                     '&:hover': { 
                       bgcolor: '#f8fafc',
                       transform: 'translateY(-3px)',
