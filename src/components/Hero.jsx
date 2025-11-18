@@ -200,8 +200,8 @@ export default function Hero() {
               {/* Decorative rings */}
               <Box sx={{
                 position: 'absolute',
-                width: { xs: 300, sm: 350, lg: 400 },
-                height: { xs: 300, sm: 350, lg: 400 },
+                width: { xs: 370, sm: 350, lg: 400 },
+                height: { xs: 370, sm: 350, lg: 400 },
                 border: '2px solid rgba(255,255,255,0.1)',
                 borderRadius: '50%',
                 top: '50%',
@@ -211,8 +211,8 @@ export default function Hero() {
               }} />
               <Box sx={{
                 position: 'absolute',
-                width: { xs: 350, sm: 400, lg: 450 },
-                height: { xs: 350, sm: 400, lg: 450 },
+                width: { xs: 420, sm: 400, lg: 450 },
+                height: { xs: 420, sm: 400, lg: 450 },
                 border: '1px solid rgba(255,255,255,0.05)',
                 borderRadius: '50%',
                 top: '50%',
@@ -225,8 +225,8 @@ export default function Hero() {
                 src={profileImg}
                 alt="Syam Kumar"
                 sx={{
-                  width: { xs: 250, sm: 280, md: 350, lg: 380 },
-                  height: { xs: 250, sm: 280, md: 350, lg: 380 },
+                  width: { xs: 320, sm: 280, md: 350, lg: 380 },
+                  height: { xs: 320, sm: 280, md: 350, lg: 380 },
                   border: { xs: '4px solid rgba(255,255,255,0.3)', lg: '6px solid rgba(255,255,255,0.3)' },
                   boxShadow: '0 25px 80px rgba(0,0,0,0.4)',
                   transition: 'all 0.4s ease',
