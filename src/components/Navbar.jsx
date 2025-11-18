@@ -13,11 +13,15 @@ const navItems = [
 const scrollToSection = (id) => {
   if (id === 'home') {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    // Remove hash from URL
+    window.history.replaceState(null, null, window.location.pathname);
     return;
   }
   const section = document.getElementById(id);
   if (section) {
     section.scrollIntoView({ behavior: 'smooth' });
+    // Remove hash from URL
+    window.history.replaceState(null, null, window.location.pathname);
   }
 };
 

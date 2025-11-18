@@ -162,13 +162,13 @@ export default function Hero() {
                   variant="outlined" 
                   size="large"
                   startIcon={<Email />}
-                  component="a"
-                  href="#contact"
                   onClick={(e) => {
                     e.preventDefault();
                     document.getElementById('contact').scrollIntoView({ 
                       behavior: 'smooth' 
                     });
+                    // Remove hash from URL
+                    window.history.replaceState(null, null, window.location.pathname);
                   }}
                   sx={{ 
                     borderColor: 'rgba(255,255,255,0.8)',
