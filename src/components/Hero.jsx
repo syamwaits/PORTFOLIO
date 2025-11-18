@@ -9,6 +9,7 @@ const highlights = ['10+ Years Experience', 'ERP Specialist', 'Network Security'
 export default function Hero() {
   return (
     <Box 
+      id="home"
       sx={{
         minHeight: '100vh',
         background: 'linear-gradient(135deg, #1e293b 0%, #334155 50%, #0f172a 100%)',
