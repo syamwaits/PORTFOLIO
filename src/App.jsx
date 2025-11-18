@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { ThemeProvider, createTheme, CssBaseline } from '@mui/material';
-import { Box } from '@mui/material';
+import { Box, Typography, Container } from '@mui/material';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -116,6 +116,29 @@ function App() {
           <Experience />
           <Skills />
           <Contact />
+        </Box>
+        
+        {/* Footer */}
+        <Box 
+          component="footer"
+          sx={{
+            bgcolor: '#0f172a',
+            borderTop: '1px solid rgba(100, 116, 139, 0.2)',
+            py: 3,
+            textAlign: 'center'
+          }}
+        >
+          <Container maxWidth="lg">
+            <Typography 
+              variant="body2" 
+              sx={{ 
+                color: 'rgba(255, 255, 255, 0.7)',
+                fontSize: '0.9rem'
+              }}
+            >
+              © {new Date().getFullYear()} Syam Kumar. All rights reserved.
+            </Typography>
+          </Container>
         </Box>
       </Box>
     </ThemeProvider>
