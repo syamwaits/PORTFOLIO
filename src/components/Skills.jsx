@@ -247,7 +247,7 @@ export default function Skills() {
           <Typography variant="h4" sx={{ fontWeight: 700, mb: 3, color: 'text.primary' }}>
             Technical Proficiency Summary
           </Typography>
-          <Grid container spacing={4}>
+          <Grid container spacing={4} sx={{ justifyContent: 'center' }}>
             <Grid item xs={12} sm={6} md={3}>
               <Box sx={{ textAlign: 'center' }}>
                 <Typography variant="h2" sx={{ fontWeight: 800, color: '#2563eb', mb: 1 }}>
